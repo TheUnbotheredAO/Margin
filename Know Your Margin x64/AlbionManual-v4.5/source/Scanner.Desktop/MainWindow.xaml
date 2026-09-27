@@ -1,0 +1,52 @@
+<Window x:Class="Scanner.Desktop.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Style="{StaticResource {x:Type Window}}" Title="Albion Manual Crafting" Width="1420" Height="930" MinWidth="1050" MinHeight="720" WindowStartupLocation="CenterScreen">
+ <DockPanel>
+  <Border DockPanel.Dock="Top" Background="#192F39" Padding="28,20"><Grid><StackPanel><TextBlock Text="ALBION  /  MANUAL CRAFTING" Foreground="#A9D9CE" FontSize="12" FontWeight="Bold"/><TextBlock Text="Know your crafting margin." Foreground="White" FontSize="27" FontWeight="SemiBold" Margin="0,5,0,0"/></StackPanel><TextBlock Text="OFFLINE • YOUR SAVED PRICES" Foreground="#B7C8CE" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="11"/></Grid></Border>
+  <Border DockPanel.Dock="Bottom" Background="#15212D" Padding="24,10"><TextBlock x:Name="Status" Text="Select a recipe and enter your prices." TextWrapping="Wrap" FontSize="12"/></Border>
+  <Border DockPanel.Dock="Top" Background="#15212D" Padding="24,8"><StackPanel Orientation="Horizontal"><TextBlock Text="CRAFTING" Foreground="#65D6BE" VerticalAlignment="Center" Margin="0,0,24,0" FontWeight="SemiBold"/><Button Content="Materials" Click="OpenMaterials" Padding="20,7" AutomationProperties.Name="Open materials page"/></StackPanel></Border><ScrollViewer VerticalScrollBarVisibility="Auto"><StackPanel Margin="24,20">
+   <Border Style="{StaticResource Card}"><StackPanel>
+    <Grid x:Name="Selectors"><Grid.ColumnDefinitions><ColumnDefinition Width="160"/><ColumnDefinition Width="180"/><ColumnDefinition Width="190"/><ColumnDefinition Width="85"/><ColumnDefinition Width="145"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+     <StackPanel Margin="0,0,14,0"><TextBlock Style="{StaticResource Caption}" Text="SERVER"/><ComboBox x:Name="Server" SelectionChanged="ContextChanged" AutomationProperties.Name="Server"/></StackPanel>
+     <StackPanel Grid.Column="1" Margin="0,0,14,0"><TextBlock Style="{StaticResource Caption}" Text="MATERIAL CITY"/><ComboBox x:Name="City" SelectionChanged="ContextChanged" AutomationProperties.Name="Material city"/></StackPanel>
+     <StackPanel Grid.Column="2" Margin="0,0,14,0"><TextBlock Style="{StaticResource Caption}" Text="CATEGORY"/><ComboBox x:Name="Category" SelectionChanged="FilterChanged" AutomationProperties.Name="Crafting category"/></StackPanel>
+     <StackPanel Grid.Column="3" Margin="0,0,14,0"><TextBlock Style="{StaticResource Caption}" Text="TIER"/><ComboBox x:Name="Tier" SelectionChanged="FilterChanged" AutomationProperties.Name="Tier"/></StackPanel>
+     <StackPanel Grid.Column="4" Margin="0,0,14,0"><TextBlock Style="{StaticResource Caption}" Text="ENCHANTMENT"/><ComboBox x:Name="Enchant" SelectionChanged="FilterChanged" AutomationProperties.Name="Recipe enchantment"/></StackPanel><StackPanel Grid.Column="5"><TextBlock Style="{StaticResource Caption}" Text="FIND A RECIPE"/><TextBox x:Name="Search" TextChanged="SearchChanged" AutomationProperties.Name="Find a recipe"/></StackPanel>
+    </Grid>
+    <Border Background="#20353D" CornerRadius="6" Padding="12,10" Margin="0,14,0,0" ToolTip="Fixed local production specialties. Refining is listed first. Daily bonuses and the general city bonus are excluded. Reference only; your calculations use entered prices and returns.">
+     <StackPanel><TextBlock x:Name="CityBonusHeading" Foreground="#A9D9CE" FontSize="11" FontWeight="SemiBold" Margin="0,0,0,5"/><TextBlock x:Name="CityBonusText" Foreground="#E3EAF1" FontSize="13" TextWrapping="Wrap" AutomationProperties.Name="Local production bonuses"/></StackPanel>
+    </Border>
+    <Grid Margin="0,16,0,0"><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions><StackPanel Margin="0,0,16,0"><TextBlock Style="{StaticResource Caption}" Text="CRAFTING ITEM"/><ComboBox x:Name="RecipePicker" DisplayMemberPath="Name" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling" ScrollViewer.CanContentScroll="True" SelectionChanged="RecipeChanged" AutomationProperties.Name="Crafting item"/></StackPanel><StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Bottom"><Button Content="Jump to crafting session" Click="OpenSessions"/><Button x:Name="ManualButton" Content="Manual prices" Click="ManualPrices"/><Button x:Name="EditButton" Content="Edit recipe" Click="EditRecipe"/><Button x:Name="NewButton" Content="New recipe" Click="NewRecipe"/></StackPanel></Grid>
+    <TextBlock x:Name="RecipeInfo" Margin="0,12,0,0" Foreground="#A8BBCB" FontSize="12" TextWrapping="Wrap"/>
+   </StackPanel></Border>
+   <Border Style="{StaticResource Card}"><StackPanel><Grid Margin="0,0,0,12"><TextBlock Text="Saved material prices" FontSize="19" FontWeight="SemiBold"/><TextBlock x:Name="Freshness" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="#A8BBCB" FontSize="12"/></Grid>
+    <TextBlock Text="Click Manual prices to enter or update material costs. Saved prices never expire or change automatically." Foreground="#A8BBCB" FontSize="12" Margin="0,0,0,12"/>
+    <TextBlock x:Name="QuoteWarning" Background="#3B3020" Foreground="#F3CC85" Padding="10" Margin="0,0,0,10" TextWrapping="Wrap" FontSize="12"/><DataGrid x:Name="MaterialsGrid" IsReadOnly="True" MinHeight="135" MaxHeight="290" SelectionMode="Single">
+     <DataGrid.Columns><DataGridTextColumn Header="Material" Binding="{Binding Material}" Width="2*" MinWidth="185"/><DataGridTextColumn Header="Qty / craft" Binding="{Binding PerCraft}" Width="85"/><DataGridTextColumn Header="Batch qty" Binding="{Binding Quantity}" Width="85"/><DataGridTextColumn Header="City" Binding="{Binding City}" Width="95"/><DataGridTextColumn Header="Saved unit price" Binding="{Binding Used}" Width="160"/><DataGridTextColumn Header="Extended cost" Binding="{Binding Cost}" Width="110"/></DataGrid.Columns>
+    </DataGrid><Border BorderBrush="#3B5062" BorderThickness="0,1,0,0" Padding="8,12" Margin="0,4,0,0"><StackPanel HorizontalAlignment="Right" MinWidth="110"><TextBlock Text="MATERIAL TOTAL" FontSize="11" Foreground="#A8BBCB"/><TextBlock x:Name="MaterialTotal" Text="—" FontSize="21" FontWeight="SemiBold" Foreground="#65D6BE" AutomationProperties.Name="Total material cost for selected batch"/></StackPanel></Border><TextBlock x:Name="OutputMarket" Margin="0,12,0,0" FontSize="12" TextWrapping="Wrap" Foreground="#A8BBCB"/>
+   </StackPanel></Border>
+   <Border Style="{StaticResource Card}"><StackPanel><TextBlock Text="Crafting workspace" FontSize="19" FontWeight="SemiBold" Margin="0,0,0,14"/>
+    <Expander x:Name="NewSessionSetup" Header="New session setup · choose starting batch and initial sell price" IsExpanded="False"><StackPanel Margin="0,12,0,12"><Grid><Grid.ColumnDefinitions><ColumnDefinition Width="170"/><ColumnDefinition Width="260"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions><StackPanel Margin="0,0,16,0"><TextBlock Style="{StaticResource Caption}" Text="STARTING BATCH (CRAFTS)"/><TextBox x:Name="Batch" Text="1" TextChanged="InputsChanged" AutomationProperties.Name="Batch crafting quantity"/></StackPanel><StackPanel Grid.Column="1" Margin="0,0,20,0"><TextBlock Style="{StaticResource Caption}" Text="INITIAL SELL VALUE / OUTPUT ITEM"/><TextBox x:Name="Expected" IsReadOnly="True" Text="0" TextChanged="InputsChanged" AutomationProperties.Name="Expected sell value per output item"/><Button Content="Edit saved sell price" Click="EditSellPrice" Margin="0,6,0,0"/></StackPanel><TextBlock Grid.Column="2" x:Name="OutputCount" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="#A8BBCB"/></Grid>
+    <TextBlock x:Name="Validation" Foreground="#FF9988" Margin="0,8,0,0" TextWrapping="Wrap"/>
+    <UniformGrid Columns="6" Margin="0,18,0,0"><StackPanel><TextBlock Style="{StaticResource Caption}" Text="TOTAL INPUT COST"/><TextBlock x:Name="Cost" FontSize="22" FontWeight="SemiBold"/></StackPanel><StackPanel><TextBlock Style="{StaticResource Caption}" Text="GROSS SALE"/><TextBlock x:Name="Gross" FontSize="22" FontWeight="SemiBold"/></StackPanel><StackPanel><TextBlock Style="{StaticResource Caption}" Text="MARKET FEES · 6.5%"/><TextBlock x:Name="Fee" FontSize="22" FontWeight="SemiBold"/></StackPanel><StackPanel><TextBlock Style="{StaticResource Caption}" Text="NET SALE"/><TextBlock x:Name="Net" FontSize="22" FontWeight="SemiBold"/></StackPanel><StackPanel><TextBlock Style="{StaticResource Caption}" Text="PROFIT"/><TextBlock x:Name="Profit" FontSize="22" FontWeight="SemiBold"/></StackPanel><StackPanel><TextBlock Style="{StaticResource Caption}" Text="ROI"/><TextBlock x:Name="Roi" FontSize="22" FontWeight="SemiBold"/></StackPanel></UniformGrid></StackPanel></Expander>
+    <Border Background="#101B27" CornerRadius="8" Padding="16" Margin="0,22,0,0"><ContentControl x:Name="SessionHost"/></Border><Border Background="#202F3B" CornerRadius="6" Padding="12" Margin="0,18,0,0"><TextBlock Text="Premium sell-order estimate: 2.5% setup fee + 4% sales tax. Recipe silver costs are included. Enter station charges in the round crafting-fee field. Session fees and returned inventory affect the session totals; the new-session preview excludes them. Other taxes, focus and market depth are excluded. Missing material prices block cost, profit and ROI." FontSize="12" TextWrapping="Wrap" Foreground="#A8BBCB"/></Border>
+   </StackPanel></Border>
+   <TextBlock Text="Portable configuration: config/recipes.json and config/settings.json beside the executable. Material and sell prices are saved in config/manual-prices.json and config/sell-prices.json. Back up this folder." FontSize="12" Foreground="#A8BBCB" TextWrapping="Wrap"/>
+  </StackPanel></ScrollViewer>
+ </DockPanel>
+</Window>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

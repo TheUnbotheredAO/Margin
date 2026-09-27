@@ -1,0 +1,550 @@
+[
+  {
+    "Id": "134f0bb3d0d14f99b5e65101f3c61f24",
+    "Name": "Resistance Potion \u00B7 Sep 27 04:01",
+    "Server": "Americas",
+    "City": "Brecilien",
+    "Recipe": {
+      "ItemId": "T5_POTION_STONESKIN",
+      "Name": "Resistance Potion",
+      "Category": "Potion",
+      "Tier": 5,
+      "OutputQuantity": 5,
+      "Materials": [
+        {
+          "ItemId": "T5_TEASEL",
+          "Name": "Dragon Teasel",
+          "Quantity": 24.0
+        },
+        {
+          "ItemId": "T4_BURDOCK",
+          "Name": "Crenellated Burdock",
+          "Quantity": 12.0
+        },
+        {
+          "ItemId": "T4_MILK",
+          "Name": "Goat\u0027s Milk",
+          "Quantity": 6.0
+        }
+      ],
+      "Source": "AODP item metadata \u00B7 2026-09-26",
+      "Variant": 1,
+      "SilverCost": 0.0,
+      "Key": "T5_POTION_STONESKIN#1"
+    },
+    "UnitPrices": {
+      "T5_TEASEL": 604,
+      "T4_BURDOCK": 497,
+      "T4_MILK": 427
+    },
+    "InitialInventory": {
+      "T5_TEASEL": 240.0,
+      "T4_BURDOCK": 120.0,
+      "T4_MILK": 60.0
+    },
+    "ExpectedSell": 5291,
+    "Actions": [
+      {
+        "Kind": "Round",
+        "Crafts": 10,
+        "Quantities": {
+          "T5_TEASEL": 60,
+          "T4_BURDOCK": 30,
+          "T4_MILK": 12
+        },
+        "Prices": {},
+        "Time": "2026-09-27T04:19:28.2758616-04:00",
+        "CraftingFee": 0
+      },
+      {
+        "Kind": "Round",
+        "Crafts": 2,
+        "Quantities": {
+          "T5_TEASEL": 23,
+          "T4_BURDOCK": 12,
+          "T4_MILK": 5
+        },
+        "Prices": {},
+        "Time": "2026-09-27T04:19:41.5200986-04:00",
+        "CraftingFee": 0
+      }
+    ],
+    "CraftingFee": 0
+  },
+  {
+    "Id": "fd4e41b1af3548ac92c8cc3f8d1db4d1",
+    "Name": "Resistance Potion \u00B7 Sep 27 04:28",
+    "Server": "Americas",
+    "City": "Brecilien",
+    "Recipe": {
+      "ItemId": "T5_POTION_STONESKIN",
+      "Name": "Resistance Potion",
+      "Category": "Potion",
+      "Tier": 5,
+      "OutputQuantity": 5,
+      "Materials": [
+        {
+          "ItemId": "T5_TEASEL",
+          "Name": "Dragon Teasel",
+          "Quantity": 24.0
+        },
+        {
+          "ItemId": "T4_BURDOCK",
+          "Name": "Crenellated Burdock",
+          "Quantity": 12.0
+        },
+        {
+          "ItemId": "T4_MILK",
+          "Name": "Goat\u0027s Milk",
+          "Quantity": 6.0
+        }
+      ],
+      "Source": "AODP item metadata \u00B7 2026-09-26",
+      "Variant": 1,
+      "SilverCost": 0.0,
+      "Key": "T5_POTION_STONESKIN#1"
+    },
+    "UnitPrices": {
+      "T5_TEASEL": 604,
+      "T4_BURDOCK": 497,
+      "T4_MILK": 427
+    },
+    "InitialInventory": {
+      "T5_TEASEL": 240.0,
+      "T4_BURDOCK": 120.0,
+      "T4_MILK": 60.0
+    },
+    "ExpectedSell": 5291,
+    "Actions": [],
+    "CraftingFee": 0
+  },
+  {
+    "Id": "5195ed4252724ab78336ea4963b565bb",
+    "Name": "Resistance Potion \u00B7 Sep 27 04:31",
+    "Server": "Americas",
+    "City": "Brecilien",
+    "Recipe": {
+      "ItemId": "T5_POTION_STONESKIN",
+      "Name": "Resistance Potion",
+      "Category": "Potion",
+      "Tier": 5,
+      "OutputQuantity": 5,
+      "Materials": [
+        {
+          "ItemId": "T5_TEASEL",
+          "Name": "Dragon Teasel",
+          "Quantity": 24.0
+        },
+        {
+          "ItemId": "T4_BURDOCK",
+          "Name": "Crenellated Burdock",
+          "Quantity": 12.0
+        },
+        {
+          "ItemId": "T4_MILK",
+          "Name": "Goat\u0027s Milk",
+          "Quantity": 6.0
+        }
+      ],
+      "Source": "AODP item metadata \u00B7 2026-09-26",
+      "Variant": 1,
+      "SilverCost": 0.0,
+      "Key": "T5_POTION_STONESKIN#1"
+    },
+    "UnitPrices": {
+      "T5_TEASEL": 604,
+      "T4_BURDOCK": 497,
+      "T4_MILK": 427
+    },
+    "InitialInventory": {
+      "T5_TEASEL": 240.0,
+      "T4_BURDOCK": 120.0,
+      "T4_MILK": 60.0
+    },
+    "ExpectedSell": 5291,
+    "Actions": [
+      {
+        "Kind": "Round",
+        "Crafts": 10,
+        "Quantities": {
+          "T5_TEASEL": 59,
+          "T4_BURDOCK": 30,
+          "T4_MILK": 15
+        },
+        "Prices": {},
+        "Time": "2026-09-27T04:33:26.207904-04:00",
+        "CraftingFee": 0
+      },
+      {
+        "Kind": "Round",
+        "Crafts": 2,
+        "Quantities": {
+          "T5_TEASEL": 23,
+          "T4_BURDOCK": 12,
+          "T4_MILK": 6
+        },
+        "Prices": {},
+        "Time": "2026-09-27T04:33:50.6032142-04:00",
+        "CraftingFee": 0
+      }
+    ],
+    "CraftingFee": 2000
+  },
+  {
+    "Id": "906b6ebaa5c14c2f9882fc3129df74c0",
+    "Name": "Sticky Potion \u00B7 Sep 27 05:02",
+    "Server": "Americas",
+    "City": "Brecilien",
+    "Recipe": {
+      "ItemId": "T5_POTION_SLOWFIELD",
+      "Name": "Sticky Potion",
+      "Category": "Potion",
+      "Tier": 5,
+      "OutputQuantity": 5,
+      "Materials": [
+        {
+          "ItemId": "T5_TEASEL",
+          "Name": "Dragon Teasel",
+          "Quantity": 24.0
+        },
+        {
+          "ItemId": "T4_BURDOCK",
+          "Name": "Crenellated Burdock",
+          "Quantity": 12.0
+        },
+        {
+          "ItemId": "T5_EGG",
+          "Name": "Goose Eggs",
+          "Quantity": 6.0
+        }
+      ],
+      "Source": "AODP item metadata \u00B7 2026-09-26",
+      "Variant": 1,
+      "SilverCost": 0.0,
+      "Key": "T5_POTION_SLOWFIELD#1"
+    },
+    "UnitPrices": {
+      "T5_TEASEL": 604,
+      "T4_BURDOCK": 497,
+      "T5_EGG": 398
+    },
+    "InitialInventory": {
+      "T5_TEASEL": 24.0,
+      "T4_BURDOCK": 12.0,
+      "T5_EGG": 6.0
+    },
+    "ExpectedSell": 1878,
+    "Actions": [],
+    "CraftingFee": 0
+  },
+  {
+    "Id": "17208e1f38cd4f1595a3f817399419ae",
+    "Name": "Expert\u0027s Pickaxe \u00B7 Sep 27 11:53",
+    "Server": "Americas",
+    "City": "Martlock",
+    "Recipe": {
+      "ItemId": "T5_2H_TOOL_PICK",
+      "Name": "Expert\u0027s Pickaxe",
+      "Category": "Tools",
+      "Tier": 5,
+      "OutputQuantity": 1,
+      "Materials": [
+        {
+          "ItemId": "T5_PLANKS",
+          "Name": "Cedar Planks",
+          "Quantity": 6.0
+        },
+        {
+          "ItemId": "T5_METALBAR",
+          "Name": "Titanium Steel Bar",
+          "Quantity": 2.0
+        }
+      ],
+      "Source": "AODP item metadata \u00B7 2026-09-26",
+      "Variant": 1,
+      "SilverCost": 0.0,
+      "Key": "T5_2H_TOOL_PICK#1"
+    },
+    "UnitPrices": {
+      "T5_PLANKS": 790,
+      "T5_METALBAR": 1035
+    },
+    "InitialInventory": {
+      "T5_PLANKS": 300.0,
+      "T5_METALBAR": 100.0
+    },
+    "ExpectedSell": 142997,
+    "Actions": [
+      {
+        "Kind": "Round",
+        "Crafts": 50,
+        "Quantities": {
+          "T5_PLANKS": 46,
+          "T5_METALBAR": 16
+        },
+        "Prices": {},
+        "Time": "2026-09-27T11:54:38.9452462-04:00",
+        "CraftingFee": 0
+      },
+      {
+        "Kind": "Round",
+        "Crafts": 7,
+        "Quantities": {
+          "T5_PLANKS": 22,
+          "T5_METALBAR": 8
+        },
+        "Prices": {},
+        "Time": "2026-09-27T11:55:11.8637184-04:00",
+        "CraftingFee": 0
+      },
+      {
+        "Kind": "Round",
+        "Crafts": 3,
+        "Quantities": {
+          "T5_PLANKS": 12,
+          "T5_METALBAR": 4
+        },
+        "Prices": {},
+        "Time": "2026-09-27T11:55:28.8446468-04:00",
+        "CraftingFee": 0
+      },
+      {
+        "Kind": "Round",
+        "Crafts": 2,
+        "Quantities": {
+          "T5_PLANKS": 6,
+          "T5_METALBAR": 2
+        },
+        "Prices": {},
+        "Time": "2026-09-27T11:55:41.6668838-04:00",
+        "CraftingFee": 0
+      },
+      {
+        "Kind": "Round",
+        "Crafts": 1,
+        "Quantities": {
+          "T5_PLANKS": 2,
+          "T5_METALBAR": 1
+        },
+        "Prices": {},
+        "Time": "2026-09-27T11:56:00.7390755-04:00",
+        "CraftingFee": 0
+      }
+    ],
+    "CraftingFee": 0
+  },
+  {
+    "Id": "1d1cda1abb4b4663acf855e48d2a56f9",
+    "Name": "Adept\u0027s Bear Paws \u2014 recipe 1 \u00B7 Sep 27 13:57",
+    "Server": "Americas",
+    "City": "Martlock",
+    "Recipe": {
+      "ItemId": "T4_2H_DUALAXE_KEEPER",
+      "Name": "Adept\u0027s Bear Paws \u2014 recipe 1",
+      "Category": "Axe",
+      "Tier": 4,
+      "OutputQuantity": 1,
+      "Materials": [
+        {
+          "ItemId": "T4_PLANKS",
+          "Name": "Pine Planks",
+          "Quantity": 12.0
+        },
+        {
+          "ItemId": "T4_METALBAR",
+          "Name": "Steel Bar",
+          "Quantity": 20.0
+        },
+        {
+          "ItemId": "T4_ARTEFACT_2H_DUALAXE_KEEPER",
+          "Name": "Adept\u0027s Keeper Axeheads",
+          "Quantity": 1.0
+        }
+      ],
+      "Source": "AODP item metadata \u00B7 2026-09-26",
+      "Variant": 1,
+      "SilverCost": 0.0,
+      "Key": "T4_2H_DUALAXE_KEEPER#1"
+    },
+    "UnitPrices": {
+      "T4_PLANKS": 320,
+      "T4_METALBAR": 312,
+      "T4_ARTEFACT_2H_DUALAXE_KEEPER": 98997
+    },
+    "InitialInventory": {
+      "T4_PLANKS": 12.0,
+      "T4_METALBAR": 20.0,
+      "T4_ARTEFACT_2H_DUALAXE_KEEPER": 1.0
+    },
+    "ExpectedSell": 279992,
+    "Actions": [],
+    "CraftingFee": 0
+  },
+  {
+    "Id": "e80fa98b25d6460780ebeb62f29a4cac",
+    "Name": "Adept\u0027s Bear Paws [4.3] \u2014 recipe 1 \u00B7 Sep 27 14:08",
+    "Server": "Americas",
+    "City": "Martlock",
+    "Recipe": {
+      "ItemId": "T4_2H_DUALAXE_KEEPER@3",
+      "Name": "Adept\u0027s Bear Paws [4.3] \u2014 recipe 1",
+      "Category": "Axe",
+      "Tier": 4,
+      "OutputQuantity": 1,
+      "Materials": [
+        {
+          "ItemId": "T4_PLANKS_LEVEL3@3",
+          "Name": "Exceptional Pine Planks",
+          "Quantity": 12.0
+        },
+        {
+          "ItemId": "T4_METALBAR_LEVEL3@3",
+          "Name": "Exceptional Steel Bar",
+          "Quantity": 20.0
+        },
+        {
+          "ItemId": "T4_ARTEFACT_2H_DUALAXE_KEEPER",
+          "Name": "Adept\u0027s Keeper Axeheads",
+          "Quantity": 1.0
+        }
+      ],
+      "Source": "AODP item metadata \u00B7 2026-09-26",
+      "Variant": 1,
+      "SilverCost": 0.0,
+      "Key": "T4_2H_DUALAXE_KEEPER@3#1"
+    },
+    "UnitPrices": {
+      "T4_PLANKS_LEVEL3@3": 7697,
+      "T4_METALBAR_LEVEL3@3": 8962,
+      "T4_ARTEFACT_2H_DUALAXE_KEEPER": 98997
+    },
+    "InitialInventory": {
+      "T4_PLANKS_LEVEL3@3": 12.0,
+      "T4_METALBAR_LEVEL3@3": 20.0,
+      "T4_ARTEFACT_2H_DUALAXE_KEEPER": 1.0
+    },
+    "ExpectedSell": 0,
+    "Actions": [],
+    "CraftingFee": 0
+  },
+  {
+    "Id": "7499b997d8244e7f8500edbdc76aacc0",
+    "Name": "Adept\u0027s Bear Paws [4.3] \u2014 recipe 1 \u00B7 Sep 27 14:08",
+    "Server": "Americas",
+    "City": "Martlock",
+    "Recipe": {
+      "ItemId": "T4_2H_DUALAXE_KEEPER@3",
+      "Name": "Adept\u0027s Bear Paws [4.3] \u2014 recipe 1",
+      "Category": "Axe",
+      "Tier": 4,
+      "OutputQuantity": 1,
+      "Materials": [
+        {
+          "ItemId": "T4_PLANKS_LEVEL3@3",
+          "Name": "Exceptional Pine Planks",
+          "Quantity": 12.0
+        },
+        {
+          "ItemId": "T4_METALBAR_LEVEL3@3",
+          "Name": "Exceptional Steel Bar",
+          "Quantity": 20.0
+        },
+        {
+          "ItemId": "T4_ARTEFACT_2H_DUALAXE_KEEPER",
+          "Name": "Adept\u0027s Keeper Axeheads",
+          "Quantity": 1.0
+        }
+      ],
+      "Source": "AODP item metadata \u00B7 2026-09-26",
+      "Variant": 1,
+      "SilverCost": 0.0,
+      "Key": "T4_2H_DUALAXE_KEEPER@3#1"
+    },
+    "UnitPrices": {
+      "T4_PLANKS_LEVEL3@3": 7697,
+      "T4_METALBAR_LEVEL3@3": 8962,
+      "T4_ARTEFACT_2H_DUALAXE_KEEPER": 98997
+    },
+    "InitialInventory": {
+      "T4_PLANKS_LEVEL3@3": 12.0,
+      "T4_METALBAR_LEVEL3@3": 20.0,
+      "T4_ARTEFACT_2H_DUALAXE_KEEPER": 1.0
+    },
+    "ExpectedSell": 279992,
+    "Actions": [
+      {
+        "Kind": "Round",
+        "Crafts": 1,
+        "Quantities": {
+          "T4_PLANKS_LEVEL3@3": 0,
+          "T4_METALBAR_LEVEL3@3": 0,
+          "T4_ARTEFACT_2H_DUALAXE_KEEPER": 0
+        },
+        "Prices": {},
+        "Time": "2026-09-27T14:09:04.4982279-04:00",
+        "CraftingFee": 500
+      }
+    ],
+    "CraftingFee": 0
+  },
+  {
+    "Id": "64b2ad2aae754dbcb002d150ad912c04",
+    "Name": "Adept\u0027s Bear Paws [4.3] \u2014 recipe 1 \u00B7 Sep 27 14:09",
+    "Server": "Americas",
+    "City": "Martlock",
+    "Recipe": {
+      "ItemId": "T4_2H_DUALAXE_KEEPER@3",
+      "Name": "Adept\u0027s Bear Paws [4.3] \u2014 recipe 1",
+      "Category": "Axe",
+      "Tier": 4,
+      "OutputQuantity": 1,
+      "Materials": [
+        {
+          "ItemId": "T4_PLANKS_LEVEL3@3",
+          "Name": "Exceptional Pine Planks",
+          "Quantity": 12.0
+        },
+        {
+          "ItemId": "T4_METALBAR_LEVEL3@3",
+          "Name": "Exceptional Steel Bar",
+          "Quantity": 20.0
+        },
+        {
+          "ItemId": "T4_ARTEFACT_2H_DUALAXE_KEEPER",
+          "Name": "Adept\u0027s Keeper Axeheads",
+          "Quantity": 1.0
+        }
+      ],
+      "Source": "AODP item metadata \u00B7 2026-09-26",
+      "Variant": 1,
+      "SilverCost": 0.0,
+      "Key": "T4_2H_DUALAXE_KEEPER@3#1"
+    },
+    "UnitPrices": {
+      "T4_PLANKS_LEVEL3@3": 7697,
+      "T4_METALBAR_LEVEL3@3": 8962,
+      "T4_ARTEFACT_2H_DUALAXE_KEEPER": 98997
+    },
+    "InitialInventory": {
+      "T4_PLANKS_LEVEL3@3": 12.0,
+      "T4_METALBAR_LEVEL3@3": 20.0,
+      "T4_ARTEFACT_2H_DUALAXE_KEEPER": 1.0
+    },
+    "ExpectedSell": 279992,
+    "Actions": [
+      {
+        "Kind": "Round",
+        "Crafts": 1,
+        "Quantities": {
+          "T4_PLANKS_LEVEL3@3": 0,
+          "T4_METALBAR_LEVEL3@3": 0,
+          "T4_ARTEFACT_2H_DUALAXE_KEEPER": 0
+        },
+        "Prices": {},
+        "Time": "2026-09-27T14:09:45.6758185-04:00",
+        "CraftingFee": 0
+      }
+    ],
+    "CraftingFee": 0
+  }
+]

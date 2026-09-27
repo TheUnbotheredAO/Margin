@@ -1,0 +1,64 @@
+PASS: complete catalog validates
+PASS: manual batch cost, 6.5% fee, profit and ROI
+PASS: missing prices never treated as free
+PASS: recipe silver included
+PASS: multi-output batch revenue
+PASS: material prices survive restart
+PASS: sell price survives restart
+PASS: market isolation
+PASS: calculations do not modify saved prices
+PASS: updating one item preserves others
+PASS: personal update persists
+PASS: explicit clear persists
+PASS: core has no HTTP dependency
+PASS: 24/12/6 used and 11/5/3 returned example
+PASS: zero returns matches baseline
+PASS: returned quantities are absolute batch totals
+PASS: direct silver cost is not refunded
+PASS: missing saved prices block adjusted profit
+PASS: full return leaves zero cost and undefined ROI
+PASS: reject negative returned quantity
+PASS: reject returns exceeding batch usage
+PASS: reject fractional resource count
+PASS: first round uses exact entered balance
+PASS: 59/30/15 then 23/12/6 replaces balances without carryover
+PASS: 23 Teasel does not allow a 24-Teasel craft
+PASS: only latest inventory valued, purchased inputs charged once
+PASS: profit cards use latest balance and unchanged fee
+PASS: blocks crafting beyond exact latest inventory
+PASS: explicit purchases still add stock and cost
+PASS: top-up inventory uses snapshot valuation
+PASS: third round replaces purchased and previous balances
+PASS: saved sessions retain replacement semantics
+PASS: undo restores prior entered balance
+PASS: direct silver remains per craft
+PASS: balance may exceed one-round consumption when stock remains
+PASS: zero entries replace inventory with zero
+PASS: existing saved sessions recalculate successfully
+PASS: session fee counted once across all rounds
+PASS: fee reduces both profit figures
+PASS: both ROI denominators include fee
+PASS: crafting fee leaves listing fee and inventory valuation unchanged
+PASS: session fee survives serialization
+PASS: legacy sessions default fee to zero
+PASS: editing fee replaces previous total
+PASS: clearing fee to zero restores original cost
+PASS: invalid crafting fee rejected
+PASS: invalid crafting fee rejected
+PASS: round fees accumulate once and reduce both profits
+PASS: undo removes latest round fee
+PASS: legacy session fee retained alongside new round fees
+PASS: round fees survive save and reload
+PASS: setup fee and Premium tax both apply to gross sale
+PASS: negative round fee rejected
+PASS: material catalog excludes crafting artifacts
+PASS: T5.3 material filter includes correct planks only
+PASS: normal material filter excludes enchanted resources
+PASS: all filters retain all non-artifact ingredients
+PASS: enchanted logs and planks have distinct material groups
+PASS: milk and herbs remain other ingredients
+PASS: older prices have unknown dates
+PASS: changed price date persists
+PASS: price dates respect server
+PASS: cleared price clears its date
+63 checks passed.
